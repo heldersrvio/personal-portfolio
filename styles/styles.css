@@ -256,3 +256,69 @@ footer span a {
 footer span a:visited {
   color: transparent;
 }
+
+.project-body video {
+    display: none;
+}
+
+.project-body {
+    text-align: center;
+    color: var(--platinum);
+}
+
+.project-body h1 {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.project-body img {
+    max-width: calc(100vw - 40px);
+}
+
+.project-body .images-and-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 60px 0 80px 0;
+}
+
+.project-body > span, .project-body p {
+    display: block;
+    font-family: var(--secondary-font);
+    margin: 0 20px 15px 20px;
+}
+
+.project-body strong {
+    font-weight: 600;
+}
+
+.project-body > span a, .project-body span.live-repo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--tertiary-font);
+    font-size: 1.5rem;
+}
+
+.project-body span a.live {
+    color: var(--yellow-green);
+}
+
+.project-body span a.live:hover, .project-body span a.live:active {
+    color: var(--bitter-lime);
+    text-decoration: underline;
+}
+
+.project-body span a.repo {
+    color: var(--madder-lake);
+}
+
+.project-body span a.repo:hover, .project-body span a.repo:active {
+    color: var(--carnelian);
+    text-decoration: underline;
+}
+
+.project-body .images-and-videos img:only-of-type {
+    margin-bottom: 120px;
+}

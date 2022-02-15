@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+:root {
+  --eerie-black: #161514;
+  --platinum: #e9e5e2;
+  --madder-lake: #c3423f;
+  --carnelian: #bb1d1a;
+  --amazon: #417b5a;
+  --viridian: #508768;
+  --yellow-green: #98ce00;
+  --bitter-lime: #b5f700;
+  --sonic-silver: #757780;
+
+  --main-font: "Balsamiq Sans", cursive;
+  --secondary-font: "Ubuntu", sans-serif;
+  --tertiary-font: "Crimson Pro", serif;
+}

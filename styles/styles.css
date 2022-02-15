@@ -12,10 +12,9 @@
   --bitter-lime: #b5f700;
   --sonic-silver: #757780;
 
-  --main-font: "Balsamiq Sans", cursive;
-  --secondary-font: "Ubuntu", sans-serif;
-  --tertiary-font: "Crimson Pro", serif;
-  --quaternary-font: "VT323", monospace;
+  --main-font: "Ubuntu", sans-serif;
+  --secondary-font: "Crimson Pro", serif;
+  --tertiary-font: "VT323", monospace;
 }
 
 body {
@@ -31,13 +30,14 @@ section {
 }
 
 section:not(.about) {
-  margin: 40px 0;
+  margin: 60px 0;
+  padding: 0 0 60px 0;
+  border-bottom: 1px solid var(--sonic-silver);
 }
 
 section h1 {
   font-family: var(--main-font);
   color: var(--platinum);
-  text-transform: uppercase;
   font-size: 2rem;
   margin: 0 0 15px 0;
 }
@@ -68,7 +68,7 @@ section.about {
 
 @keyframes goDown {
   from {
-    transform: translateY(-100%);
+    transform: translateY(-20%);
   }
   to {
     transform: none;
@@ -85,7 +85,7 @@ section.about img {
 
 section.about p.bio {
   color: var(--platinum);
-  font-family: var(--quaternary-font);
+  font-family: var(--tertiary-font);
   font-size: 1.6rem;
   border: 1pt solid var(--platinum);
   border-radius: 5px;
@@ -158,7 +158,7 @@ nav ul {
 nav a {
   display: block;
   color: var(--platinum);
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
   padding: 20px;
   font-size: 1.2rem;
   text-decoration: none;
@@ -200,7 +200,7 @@ section.projects ul li {
 }
 
 section.projects a {
-  font-family: var(--tertiary-font);
+  font-family: var(--secondary-font);
   font-weight: 600;
   color: var(--platinum);
   text-decoration: none;
@@ -220,4 +220,39 @@ section.projects a h2 {
 section.projects li a:hover h2,
 section.projects li a:active h2 {
   text-decoration: underline;
+}
+
+section.contact span {
+  display: block;
+  color: var(--platinum);
+  font-size: 1rem;
+  font-family: var(--main-font);
+  margin-top: 20px;
+}
+
+section.contact span em {
+  color: var(--madder-lake);
+}
+
+footer {
+  background-color: var(--sonic-silver);
+  margin: -60px 0 0 0;
+  padding: 15px 0;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+footer span a {
+  text-decoration: none;
+}
+
+footer span a:visited {
+  color: transparent;
 }

@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helder Sérvio</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+  </head>
+  <body class="project-body">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html#about">About</a>
+        </li>
+        <li>
+          <a href="index.html#stack">Stack</a>
+        </li>
+        <li>
+          <a href="index.html#projects">Projects</a>
+        </li>
+        <li>
+          <a href="index.html#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Notes</h1>
+    <p>
+      A copy of the Notes iOS app that lets you write notes and organize them
+      inside folders. You can add, rename and delete folders, as well as create
+      and delete notes inside each of them.
+    </p>
+    <span><strong>Stack:</strong> Swift · UIKit</span>
+    <span class="live-repo"
+      ><a class="repo" href="https://github.com/heldersrvio/Notes"
+        >Repo</a
+      ></span
+    >
+    <div class="images-and-videos">
+      <video controls>
+        <source
+          src="projects/notes/demo.mp4"
+          media="(min-width: 500px)"
+          type="video/mp4"
+        />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <picture>
+        <source
+          media="(max-width: 499px)"
+          srcset="projects/notes/img1_mobile.png"
+        />
+        <source media="(min-width: 500px)" srcset="projects/notes/img1.png" />
+        <img src="projects/notes/img1.png" alt="Folders screen" />
+      </picture>
+      <picture>
+        <source
+          media="(max-width: 499px)"
+          srcset="projects/notes/img2_mobile.png"
+        />
+        <source media="(min-width: 500px)" srcset="projects/notes/img2.png" />
+        <img src="projects/notes/img2.png" alt="Notes screen" />
+      </picture>
+      <picture>
+        <source
+          media="(max-width: 499px)"
+          srcset="projects/notes/img3_mobile.png"
+        />
+        <source media="(min-width: 500px)" srcset="projects/notes/img3.png" />
+        <img src="projects/notes/img3.png" alt="Folder options modal" />
+      </picture>
+    </div>
+    <footer>
+      <span
+        >Helder Sérvio
+        <a href="https://github.com/heldersrvio"
+          ><i class="devicon-github-original"></i></a
+      ></span>
+    </footer>
+  </body>
 </html>

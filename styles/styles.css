@@ -376,12 +376,13 @@ footer span a:visited {
     align-items: center;
     gap: 50px;
   }
-  
+
   section.projects ul li {
     height: 300px;
   }
 
-  .project-body > p, .project-body > .images-and-videos {
+  .project-body > p,
+  .project-body > .images-and-videos {
     padding-left: 15vw;
     padding-right: 15vw;
   }
@@ -406,5 +407,51 @@ footer span a:visited {
 
   .project-body .images-and-videos img:only-of-type {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  section.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  section.about > img,
+  section.about > p.bio {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    text-align: left;
+  }
+
+  section.about > p.bio {
+    border: none;
+  }
+
+  section.about > p.bio::before {
+    content: "$";
+  }
+
+  section.about > p.bio::after {
+    content: "❚";
+  }
+
+  nav {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .project-body > p,
+  .project-body > span {
+    font-size: 1.5rem;
+  }
+
+  .project-body > span a,
+  .project-body span.live-repo {
+    font-size: 2rem;
   }
 }

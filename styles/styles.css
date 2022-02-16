@@ -81,7 +81,7 @@ section.about img {
   box-shadow: 0 0 5px 5px var(--sonic-silver);
   margin: 20px 0 0 0;
   z-index: 2;
-  width: 70vw;
+  width: clamp(30vw, 70vw, calc(70% * 500px));
 }
 
 section.about p.bio {
@@ -110,6 +110,7 @@ section.about a {
   width: 10rem;
   height: 3rem;
   border-radius: 5px;
+  z-index: 3;
 }
 
 .chevron::before {
@@ -329,7 +330,7 @@ footer span a:visited {
   margin-bottom: 135px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
   section.about {
     display: grid;
     grid-template-rows: 9fr 1fr;

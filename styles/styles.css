@@ -50,7 +50,7 @@ a {
 
 section.about {
   position: relative;
-  height: 100vh;
+  height: clamp(600px, 100vh, 100vh);
   opacity: 1;
   animation-name: fadeInOpacity, goDown;
   animation-iteration-count: 1, 1;
